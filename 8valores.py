@@ -1,22 +1,26 @@
-def potencia(x, y):
+def potencia(base, expoente):
     resultado = 1
-
-    # Regra: qualquer número elevado a 0 é 1
-    if y == 0:
+    if expoente == 0:
         return 1
 
-    if y < 0:
-        x = 1 / x
-        y = -y
-
-    # Multiplicações     for i in range(y):
-        resultado *= x
-
+    for _ in range(expoente):
+        resultado *= base
     return resultado
 
 
-# Programa principal
-x = int(input("Digite o valor de x: "))
-y = int(input("Digite o valor de y: "))
+def ler_valores():
+    x = int(input("Digite o valor de x: "))
+    y = int(input("Digite o valor de y: "))
+    return x, y
 
-print("Resultado de x^y =", potencia(x, y))
+
+def main():
+    x, y = ler_valores()
+
+    resultado = potencia(x, y)
+
+    print(f"\nResultado de {x}^{y} = {resultado}")
+
+
+if __name__ == "__main__":
+    main()
