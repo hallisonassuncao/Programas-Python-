@@ -15,7 +15,6 @@ def melhor_aluno_por_disciplina(lista):
         if disciplina not in disciplinas:
             disciplinas.append(disciplina)
 
-    # para cada disciplina, acha o melhor aluno
     for disciplina in disciplinas:
         melhor_nome = ""
         melhor_nota = -1
