@@ -36,7 +36,7 @@ def main():
     assentos = [False] * 10
 
     while True:
-        print("=== CINEMA ===")
+        print("=== Menu do CINEMA ===")
         print("1. Reservar um assento")
         print("2. Liberar um assento")
         print("3. Mostrar mapa de ocupação")
